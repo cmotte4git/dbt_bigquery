@@ -1,0 +1,13 @@
+# dbt_project.yml
+
+name: 'retail'
+version: '1.0.0'
+
+profile: 'retail'
+
+model-paths: ["models"]
+
+models:
+  dbt:
+    transform:
+      +materialized: table

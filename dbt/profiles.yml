@@ -1,0 +1,14 @@
+# profiles.yml
+
+retail:
+ target: dev
+ outputs:
+  dev:
+    type: bigquery
+    method: service-account
+    keyfile: gcp/service_account.json
+    project: airflow-dbt-426117
+    dataset: retail
+    threads: 1
+    timeout_seconds: 300
+    location: US
