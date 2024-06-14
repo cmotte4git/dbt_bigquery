@@ -1,0 +1,21 @@
+
+version: 2
+
+
+models:
+  - name: dim_customer
+    description: "stores customer attributes"
+
+    columns:
+      - name: CustomerID
+        description: &id_parcelle_desc "unique id for one slot"
+      
+  - name: fct_invoices
+    description: "fact table for invoices"
+    
+    columns:
+      - name: product_id
+        description: unique product identifier
+     
+
+   

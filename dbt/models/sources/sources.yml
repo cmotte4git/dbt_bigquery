@@ -4,5 +4,7 @@ sources:
   - name: retail
     database: airflow-dbt-426117 # Put the project id!
     tables:
-      - name: raw_invoices
+      - name: raw_invoices # data is comming from airflow-dbt-426117
+        description: raw invoices data from BigQuery airflow-dbt-426117
       - name: country
+        description: Counrty mapping table to convert iso code country
